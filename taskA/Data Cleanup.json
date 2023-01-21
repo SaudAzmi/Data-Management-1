@@ -1,0 +1,439 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column name using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "grel:value.replace(\"....\",'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column name using expression grel:value.replace(\"....\",'')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "grel:value.replace(\"!\",'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column name using expression grel:value.replace(\"!\",'')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "grel:value.replace(\";\",',')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column name using expression grel:value.replace(\";\",',')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "price",
+    "expression": "jython:return(value).split(\".\")[0]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column price using expression jython:return(value).split(\".\")[0]"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "neighbourhood_group",
+    "expression": "grel:value.replace(\"Qeens\",\"Queens\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column neighbourhood_group using expression grel:value.replace(\"Qeens\",\"Queens\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "neighbourhood_group",
+    "expression": "grel:value.replace(\"New York\",\"Manhattan\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column neighbourhood_group using expression grel:value.replace(\"New York\",\"Manhattan\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "last_review",
+    "expression": "grel:if(value==null,'NA',value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column last_review using expression grel:if(value==null,'NA',value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column name using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "grel:if(value.contains(\"And\"),value.replace(\"And\",\"&\"),value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column name using expression grel:if(value.contains(\"And\"),value.replace(\"And\",\"&\"),value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "grel:if(value.contains(\"-\"),value.replace(\"-\",\"&\"),value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column name using expression grel:if(value.contains(\"-\"),value.replace(\"-\",\"&\"),value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "grel:if(value.contains(\"+\"),value.replace(\"+\",\"&\"),value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column name using expression grel:if(value.contains(\"+\"),value.replace(\"+\",\"&\"),value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "host_name",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column host_name using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "host_name",
+    "expression": "grel:if(value.contains(\"And\"),value.replace(\"And\",\"&\"),value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column host_name using expression grel:if(value.contains(\"And\"),value.replace(\"And\",\"&\"),value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "host_name",
+    "expression": "grel:if(value.contains(\"-\"),value.replace(\"-\",\"&\"),value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column host_name using expression grel:if(value.contains(\"-\"),value.replace(\"-\",\"&\"),value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "host_name",
+    "expression": "grel:if(value.contains(\"+\"),value.replace(\"+\",\"&\"),value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column host_name using expression grel:if(value.contains(\"+\"),value.replace(\"+\",\"&\"),value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "grel:if(value.contains(\"bdrm\"),value.replace(\"bdrm\",\"bedroom\"),value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column name using expression grel:if(value.contains(\"bdrm\"),value.replace(\"bdrm\",\"bedroom\"),value)"
+  },
+  {
+    "op": "core/blank-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "reviews_per_month",
+    "description": "Blank down cells in column reviews_per_month"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "reviews_per_month",
+    "expression": "grel:if(isNull(value),\"0\",value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column reviews_per_month using expression grel:if(isNull(value),\"0\",value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "reviews_per_month",
+    "expression": "jython:if(value==\"0\"): \n return value \nelse:\n return str(\"%.2f\"%round(float(value),2))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column reviews_per_month using expression jython:if(value==\"0\"): \n return value \nelse:\n return str(\"%.2f\"%round(float(value),2))"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "latitude",
+          "expression": "value",
+          "columnName": "latitude",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "40.71813",
+                "l": "40.71813"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "latitude",
+    "expression": "jython:return value",
+    "onError": "set-to-blank",
+    "newColumnName": "Coordinates",
+    "columnInsertIndex": 7,
+    "description": "Create column Coordinates at index 7 based on column latitude using expression jython:return value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "latitude",
+          "expression": "value",
+          "columnName": "latitude",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "40.71813",
+                "l": "40.71813"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Coordinates",
+    "expression": "grel:cells ['latitude'].value + '  , '+cells['longitude'].value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Coordinates using expression grel:cells ['latitude'].value + '  , '+cells['longitude'].value"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "latitude",
+          "expression": "value",
+          "columnName": "latitude",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "40.71813",
+                "l": "40.71813"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Coordinates",
+    "expression": "grel:\"https://nominatim.openstreetmap.org/search.php?q=\"+escape(value,\"url\")+\"&format=jsonv2\"",
+    "onError": "set-to-blank",
+    "newColumnName": "API_URL",
+    "columnInsertIndex": 8,
+    "description": "Create column API_URL at index 8 based on column Coordinates using expression grel:\"https://nominatim.openstreetmap.org/search.php?q=\"+escape(value,\"url\")+\"&format=jsonv2\""
+  },
+  {
+    "op": "core/column-addition-by-fetching-urls",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "latitude",
+          "expression": "value",
+          "columnName": "latitude",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "40.71813",
+                "l": "40.71813"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "API_URL",
+    "urlExpression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "API_Data",
+    "columnInsertIndex": 9,
+    "delay": 5000,
+    "cacheResponses": true,
+    "httpHeadersJson": [
+      {
+        "name": "authorization",
+        "value": ""
+      },
+      {
+        "name": "user-agent",
+        "value": "OpenRefine 3.6.1 [5fc8883]"
+      },
+      {
+        "name": "accept",
+        "value": "*/*"
+      }
+    ],
+    "description": "Create column API_Data at index 9 by fetching URLs based on column API_URL using expression grel:value"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "latitude",
+          "expression": "value",
+          "columnName": "latitude",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "40.71813",
+                "l": "40.71813"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "API_Data",
+    "expression": "jython:import json \nvalue1=json.loads(value) \nreturn value1[0]['display_name'].split(',')[3]",
+    "onError": "set-to-blank",
+    "newColumnName": "Display_name",
+    "columnInsertIndex": 10,
+    "description": "Create column Display_name at index 10 based on column API_Data using expression jython:import json \nvalue1=json.loads(value) \nreturn value1[0]['display_name'].split(',')[3]"
+  }
+]
