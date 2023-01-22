@@ -1,6 +1,6 @@
 # Data Management I (Data Profiling and Quality Dimensions) 
 
-#Goal-A
+# Goal-A
 
 a) Data Profiling
   - Using Talend Data Quality Management tool, you have to explain the data profiling steps
@@ -28,7 +28,7 @@ b) Data Cleaning
   - Is there an alternative technique that could have been
   
   
-  #Goal-B
+  # Goal-B
   - Creating a Raw dataset refereeing to any online source like kaggle.com.
   - Conditions on the Raw dataset
   o Minimum dimensions to be considered while making the dataset Raw are
